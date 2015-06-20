@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>PsADmanagement by lipkau</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>PsADmanagement</h1>
+        <h2>A compilation of functions to simplify scripts to manage AD tasks</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/lipkau/PsADManagement/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/lipkau/PsADManagement/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/lipkau/PsADManagement" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="psadmanagement" class="anchor" href="#psadmanagement" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://lipkau.github.io/PsADManagement/">PsADManagement</a>
+</h1>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>This compilation contains functions to simplify the management of Active Directories.
+Check the examples to see how to find computers, create new users, and much more.</p>
+
+<p><em>(tested with: Windows Server(r) 2003 R2, Windows Server(r) 2008, Windows Server(r) 2008 R2)</em></p>
+
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h2>
+
+<ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#background">Background</a></li>
+<li><a href="#functionsfeature">Functions/Feature</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#authorscontributors">Authors/Contributors</a></li>
+</ul>
+
+<h2>
+<a id="background" class="anchor" href="#background" aria-hidden="true"><span class="octicon octicon-link"></span></a>Background</h2>
+
+<blockquote>
+<p>Microsoft introduced a built-in PowerShell module for managing Active Directory in Windows 2008R2(r). However, I have two problems with this module:</p>
+
+<ul>
+<li>It is only available on the server and I want to be able to run stuff (most of all Get-* commands) from my local computer</li>
+<li>It doesn’t work with Windows 2008 and 2003 ADs and DCs</li>
+</ul>
+
+<p>So I decided to write my own set of functions, which soon turned into a complete module. Since it is supposed to be a tool to work mainly with older servers, it’s time to finally publish it (Although it is not 100% yet).</p>
+
+<p>There might still be bugs in the functions.</p>
+</blockquote>
+
+<p><em>This was first published @ <a href="http://oliver.lipkau.net/blog/admanagement-module">http://oliver.lipkau.net/blog/admanagement-module</a> on 2011/07/18</em></p>
+
+<h2>
+<a id="functionsfeature" class="anchor" href="#functionsfeature" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functions/Feature</h2>
+
+<ul>
+<li>Add-GroupMember</li>
+<li>Disable-Account</li>
+<li>Enable-Account</li>
+<li>Get-ADACL</li>
+<li>Get-Computer</li>
+<li>Get-Domain</li>
+<li>Get-DomainControllerInfo</li>
+<li>Get-DomainControllers</li>
+<li>Get-DomainPasswordPolicy</li>
+<li>Get-DomainRoot</li>
+<li>Get-EmptyGroup</li>
+<li>Get-Forest</li>
+<li>Get-FSMORoleHolder</li>
+<li>Get-Group</li>
+<li>Get-GroupMember</li>
+<li>Get-GroupMembership</li>
+<li>Get-IPSite</li>
+<li>Get-NearestDC</li>
+<li>Get-Object</li>
+<li>Get-ObjectBySID</li>
+<li>Get-ObjectSID</li>
+<li>Get-RODC</li>
+<li>Get-StaleComputer</li>
+<li>Get-User</li>
+<li>Impersonation</li>
+<li>Move-Object</li>
+<li>New-Computer</li>
+<li>New-Group</li>
+<li>New-OU</li>
+<li>New-Password</li>
+<li>New-User</li>
+<li>Remove-GroupMember</li>
+<li>Remove-Object</li>
+<li>Rename-Object</li>
+<li>Set-ADACL</li>
+<li>Set-Computer</li>
+<li>Set-DomainMode</li>
+<li>Set-ForestMode</li>
+<li>Set-OU</li>
+<li>Set-User</li>
+<li>Test-IsRODC</li>
+<li>Test-SameSubnet</li>
+</ul>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a id="load-the-module" class="anchor" href="#load-the-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Load the Module</h3>
+
+<p>Unzip the content of the file to: <em>%userprofile%\Documents\WindowsPowerShell\Modules\PsADManagement</em>, open powershell and run <code>Import-Module PsADManagement</code></p>
+
+<h3>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
+
+<p><em>Yet to come</em></p>
+
+<h2>
+<a id="authorscontributors" class="anchor" href="#authorscontributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors/Contributors</h2>
+
+<ul>
+<li><a href="http://oliver.lipkau.net">Oliver Lipkau</a></li>
+<li><a href="http://www.bsonposh.com">YetiCentral\bshell</a></li>
+</ul>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-64222060-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
