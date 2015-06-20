@@ -69,7 +69,7 @@ _This was first published @ http://oliver.lipkau.net/blog/admanagement-module on
 
 ## Usage
 ### Load the Module
-Unzip the content of the file to: C:\Users\_<your user name>_\Documents\WindowsPowerShell\Modules\ADManagement, open powershell and run `Import-Module PsADManagement`
+Unzip the content of the file to: _%userprofile%\Documents\WindowsPowerShell\Modules\PsADManagement_, open powershell and run `Import-Module PsADManagement`
 
 ### Examples
 _Yet to come_
