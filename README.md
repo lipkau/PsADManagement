@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/lipkau/PsADManagement.png?label=ready&title=Ready)](https://waffle.io/lipkau/PsADManagement)
 # [PsADManagement](http://lipkau.github.io/PsADManagement/)
 ## Description  
 This compilation contains functions to simplify the management of Active Directories.
